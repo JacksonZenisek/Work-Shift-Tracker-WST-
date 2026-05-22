@@ -1,0 +1,190 @@
+header.main_header{
+    height:100px;
+    width:auto;
+    margin:-8px;
+    border:1px solid transparent;
+}
+
+
+h1.main_heading{
+    font-size:50px;
+    text-align:center;
+    color:black;
+}
+
+div.main_content_container{
+    height:1700px;
+    width:1000px;
+    border:1px solid transparent;
+    margin-top:50px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
+div.current_shift_container{
+    height:100px;
+    width:400px;
+    border:1px solid black;
+    margin-right:auto;
+    margin-left:auto;
+    display:block;
+}
+
+p.shift_switch_para{
+    font-size: 40px;
+    text-align:center;
+    color:black
+}
+
+p.currenttime{
+    text-align:center;
+    font-size:40px;
+    color:black;
+    margin-top:50px;
+}
+
+h5.schedule_heading{
+    font-size:40px;
+    text-align:center;
+    color:black;
+}
+
+table.a_and_c_week{
+    height:550px;
+    width:800px;
+    border-collapse:collapse;
+    border:3px solid black;
+    font-size:20px;
+    text-align:center;
+    margin-top:200px;
+    margin-left:auto;
+    margin-right:auto;
+    display:none;
+}
+th, td, tr.a_and_c_week{
+    height:100px;
+    width:100px;
+    border-collapse:collapse;
+    border:1px solid black;
+}
+
+td.ashift_box{
+    background-color:#ff6d6d;
+}
+
+td.bshift_box{
+    background-color:#82ec82;
+}
+
+td.cshift_box{
+    background-color:#ffff82;
+}
+
+td.dshift_box{
+    background-color:#70bfff;
+}
+
+
+table.b_and_d_week{
+    height:550px;
+    width:800px;
+    border-collapse:collapse;
+    border:3px solid black;
+    font-size:20px;
+    text-align:center;
+    margin-top:200px;
+    margin-left:auto;
+    margin-right:auto;
+    display:none;
+}
+th, td, tr.b_and_d_week{
+    height:100px;
+    width:100px;
+    border-collapse:collapse;
+    border:1px solid black;
+}
+
+p.download_heading{
+    font-size:30px;
+    color:black;
+    text-align:center;
+    margin-top:50px;
+}
+
+a.download_link{
+    font-size:20px;
+    color:blue;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    text-decoration:underline;
+    text-underline-offset: 7px;
+    transition:0.5s;
+}
+
+a.download_link:hover{
+    cursor:pointer;
+    color:rgb(0, 119, 255);
+}
+
+p.not_avail{
+    font-size:20px;
+    color:rgb(255, 0, 0);
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    display:none;
+}
+
+footer.main_foot{
+    height:200px;
+    width:auto;
+    border-top:1px solid black;
+}
+
+p.footer_data{
+    text-align:center;
+    font-size:20px;
+}
+
+
+@media (max-width:1060px){
+    #main_content_container_alt{
+        width:800px;
+    }
+}
+
+@media(max-width:870px){
+    #a_and_c_week_alt,th,td{
+        width:600px;
+        font-size:15px;
+    }
+}
+
+@media(max-width:870px){
+    #main_content_container_alt{
+        width:600px;
+    }
+}
+
+
+@media(max-width:870px){
+    #b_and_d_week_alt,th,td{
+        width:600px;
+        font-size:15px;
+    }
+}
+
+@media(max-width:1100px){
+    #download_link_alt{
+        display:none;
+    }
+}
+
+@media(max-width:1100px){
+    #not_avail_alt{
+        display:block;
+    }
+}
