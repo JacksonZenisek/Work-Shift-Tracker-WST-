@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Work Shift Tracker</title>
+        <link rel="stylesheet" href="shiftrackerstyles.css">
+        <script src="shifttrackeractions.js"></script>
+        <meta charset="UTF-8">
+        <meta name="developer" content="Jackson Zenisek">
+    </head>
+    <body>
+        <br>
+            <br>
+        <header class="main_header" id="main_header_alt">
+            <h1 class="main_heading" id="main_heading_alt">Work Shift Tracker (WST): Website Edition</h1>
+        </header>
+        <br>
+            <br>
+        <div class="main_content_container" id="main_content_container_alt">
+            <div class="current_shift_container" id="current_shift_container_alt">
+                <p class="shift_switch_para" id="shift_switch_para_alt"></p>
+            </div>
+            <br>
+                <br>
+                    <br>
+            <p class="currenttime" id="currenttime_alt"></p>
+            <br>
+                <br>
+                    <br>
+            <h5 class="schedule_heading" id="schedule_heading_alt">This week's schedule:</h5>
+            <table class="a_and_c_week" id="a_and_c_week_alt">
+                <tr>
+                    <th></th>
+                    <th id="sun_col">Sunday</th>
+                    <th id="mon_col">Monday</th>
+                    <th id="tue_col">Tuesday</th>
+                    <th id="wed_col">Wednesday</th>
+                    <th id="thur_col">Thursday</th>
+                    <th id="fri_col">Friday</th>
+                    <th id="sat_col">Saturday</th>
+                </tr>
+                <tr>
+                    <td class="ashift_box"><br>A Shift</td>
+                    <td id="sunday_box"><br>6am-6pm</td>
+                    <td id="monday_box"><br>6am-6pm</td>
+                    <td id="tuesday_box"><br>6am-6pm</td>
+                    <td id="wednesday_box"><br>Off</td>
+                    <td id="thursday_box"><br>Off</td>
+                    <td id="friday_box"><br>Off</td>
+                    <td id="saturday_box"><br>Off</td>
+                </tr>
+                <tr>
+                    <td class="cshift_box"><br>C Shift</td>
+                    <td id="sunday_box"><br>6pm-6am</td>
+                    <td id="monday_box"><br>6pm-6am</td>
+                    <td id="tuesday_box"><br>6pm-6am</td>
+                    <td id="wednesday_box"><br>Off</td>
+                    <td id="thursday_box"><br>Off</td>
+                    <td id="friday_box"><br>Off</td>
+                    <td id="saturday_box"><br>Off</td>
+                </tr>
+                <tr>
+                    <td class="bshift_box"><br>B Shift</td>
+                    <td id="sunday_box"><br>Off</td>
+                    <td id="monday_box"><br>Off</td>
+                    <td id="tuesday_box"><br>Off</td>
+                    <td id="wednesday_box"><br>6am-6pm</td>
+                    <td id="thursday_box"><br>6am-6pm</td>
+                    <td id="friday_box"><br>6am-6pm</td>
+                    <td id="saturday_box"><br>6am-6pm</td>
+                </tr>
+                <tr>
+                    <td class="dshift_box"><br>D Shift</td>
+                    <td id="sunday_box"><br>Off</td>
+                    <td id="monday_box"><br>Off</td>
+                    <td id="tuesday_box"><br>Off</td>
+                    <td id="wednesday_box"><br>6pm-6am</td>
+                    <td id="thursday_box"><br>6pm-6am</td>
+                    <td id="friday_box"><br>6pm-6am</td>
+                    <td id="saturday_box"><br>6pm-6am</td>
+                </tr>
+            </table>
+            <br>
+                <br>
+            <table class="b_and_d_week" id="b_and_d_week_alt">
+                <tr>
+                    <th></th>
+                    <th id="sun_col">Sunday</th>
+                    <th id="mon_col">Monday</th>
+                    <th id="tue_col">Tuesday</th>
+                    <th id="wed_col">Wednesday</th>
+                    <th id="thur_col">Thursday</th>
+                    <th id="fri_col">Friday</th>
+                    <th id="sat_col">Saturday</th>
+                </tr>
+                <tr>
+                    <td class="ashift_box"><br>A Shift</td>
+                    <td id="sunday_box"><br>6am-6pm</td>
+                    <td id="monday_box"><br>6am-6pm</td>
+                    <td id="tuesday_box"><br>6am-6pm</td>
+                    <td id="wednesday_box"><br>6am-6pm</td>
+                    <td id="thursday_box"><br>Off</td>
+                    <td id="friday_box"><br>Off</td>
+                    <td id="saturday_box"><br>Off</td>
+                </tr>
+                <tr>
+                    <td class="cshift_box"><br>C Shift</td>
+                    <td id="sunday_box"><br>6pm-6am</td>
+                    <td id="monday_box"><br>6pm-6am</td>
+                    <td id="tuesday_box"><br>6pm-6am</td>
+                    <td id="wednesday_box"><br>6pm-6am</td>
+                    <td id="thursday_box"><br>Off</td>
+                    <td id="friday_box"><br>Off</td>
+                    <td id="saturday_box"><br>Off</td>
+                </tr>
+                <tr>
+                    <td class="bshift_box"><br>B Shift</td>
+                    <td id="sunday_box"><br>Off</td>
+                    <td id="monday_box"><br>Off</td>
+                    <td id="tuesday_box"><br>Off</td>
+                    <td id="wednesday_box"><br>Off</td>
+                    <td id="thursday_box"><br>6am-6pm</td>
+                    <td id="friday_box"><br>6am-6pm</td>
+                    <td id="saturday_box"><br>6am-6pm</td>
+                </tr>
+                <tr>
+                    <td class="dshift_box"><br>D Shift</td>
+                    <td id="sunday_box"><br>Off</td>
+                    <td id="monday_box"><br>Off</td>
+                    <td id="tuesday_box"><br>Off</td>
+                    <td id="wednesday_box"><br>Off</td>
+                    <td id="thursday_box"><br>6pm-6am</td>
+                    <td id="friday_box"><br>6pm-6am</td>
+                    <td id="saturday_box"><br>6pm-6am</td>
+                </tr>
+            </table>
+        </div>
+        <footer class="main_foot" id="main_foot_alt">
+            <p class="footer_data" id="footer_data_alt">&copy;Work Shift Tracker (WST) 2026<br><br>Developed by Jackson Zenisek<br><br>Lasted Updated: 05/22/2026</p>
+        </footer>
+    </body>
+</html>
