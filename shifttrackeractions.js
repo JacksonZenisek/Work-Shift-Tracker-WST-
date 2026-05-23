@@ -16,7 +16,7 @@ function shiftswitch(){
         currentshiftbox.style.backgroundColor = "#ff6d6d"
 
         
-    }else if((currentday === 0 || currentday === 1 || currentday === 2) && currenttime >=18, currenttime < 6){
+    }else if((currentday === 0 || currentday === 1 || currentday === 2) && currenttime >=18 && currenttime < 6){
         shiftdisplaymessage = "Current shfit is: C Shift"
         currentshiftbox.style.backgroundColor = "#ffff82"
 
@@ -24,7 +24,7 @@ function shiftswitch(){
         shiftdisplaymessage = "Current shift is: B Shift"
         currentshiftbox.style.backgroundColor = "#82ec82"
 
-    }else if((currentday === 3 || currentday === 4 || currentday === 5 || currentday === 6) && currenttime >=18, currenttime < 6){
+    }else if((currentday === 3 || currentday === 4 || currentday === 5 || currentday === 6) && currenttime >=18 && currenttime < 6){
         shiftdisplaymessage = "Current shift is: D Shift"
         currentshiftbox.style.backgroundColor = "#70bfff"
     }
