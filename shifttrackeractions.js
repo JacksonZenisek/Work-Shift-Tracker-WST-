@@ -12,12 +12,12 @@ function shiftswitch(){
     let shiftdisplaymessage = "";
 
     if((currentday === 0 || currentday === 1 || currentday === 2) && currenttime >=6 && currenttime < 18){
-        shiftdisplaymessage = "Current shfit is: A Shift"
+        shiftdisplaymessage = "Current shift is: A Shift"
         currentshiftbox.style.backgroundColor = "#ff6d6d"
 
         
     }else if((currentday === 0 || currentday === 1 || currentday === 2) && currenttime >=18 && currenttime < 6){
-        shiftdisplaymessage = "Current shfit is: C Shift"
+        shiftdisplaymessage = "Current shift is: C Shift"
         currentshiftbox.style.backgroundColor = "#ffff82"
 
     }else if((currentday === 3 || currentday === 4 || currentday === 5 || currentday === 6) && currenttime >=6 && currenttime < 18){
