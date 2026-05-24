@@ -27,6 +27,10 @@ function shiftswitch(){
     }else if((currentday === 3 || currentday === 4 || currentday === 5 || currentday === 6) && (currenttime >=18 || currenttime < 6)){
         shiftdisplaymessage = "Current shift is: D Shift"
         currentshiftbox.style.backgroundColor = "#70bfff"
+    }else if(currentday === 0 && currenttime < 6){
+        shiftdisplaymessage = "Current shift is: D Shift"
+        currentshiftbox.style.backgroundColor = "#70bfff"
+
     }
 
     document.getElementById("shift_switch_para_alt").innerHTML = shiftdisplaymessage;
