@@ -55,8 +55,8 @@ function weeklyscheduleswitch(){
 
     const weekspassed = Math.floor((today - referencedate) / millisecondsperweek);
 
-    const aandcweek = weekspassed %2 === 0;
-    const banddweek = !aandcweek;
+    const banddweek = weekspassed %2 === 0;
+    const aandcweek = !banddweek;
 
     const aandctable = document.getElementById("a_and_c_week_alt");
     const banddtable = document.getElementById("b_and_d_week_alt");
