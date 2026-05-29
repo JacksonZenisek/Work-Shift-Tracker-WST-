@@ -44,7 +44,6 @@ function timeclock(){
 
 }
 
-weeklyscheduleswitch();
 setInterval(weeklyscheduleswitch,1000)
 
 function weeklyscheduleswitch(){
