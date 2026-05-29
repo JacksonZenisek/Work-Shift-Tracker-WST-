@@ -63,10 +63,10 @@ function weeklyscheduleswitch(){
     const banddtable = document.getElementById("b_and_d_week_alt");
 
     if (banddweek){
-        banddtable.style.display = "block";
+        banddtable.style.display = "table";
         aandctable.style.display = "none";
     }else{
-        aandctable.style.display = "block";
+        aandctable.style.display = "table";
         banddtable.style.display = "none";
     }
 
