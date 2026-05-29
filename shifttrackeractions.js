@@ -44,6 +44,7 @@ function timeclock(){
 
 }
 
+weeklyscheduleswitch();
 setInterval(weeklyscheduleswitch,1000)
 
 function weeklyscheduleswitch(){
@@ -55,18 +56,18 @@ function weeklyscheduleswitch(){
 
     const weekspassed = Math.floor((today - referencedate) / millisecondsperweek);
 
-    const banddweek = weekspassed %2 === 0;
+    const banddweek = weekspassed % 2 === 0;
     const aandcweek = !banddweek;
 
     const aandctable = document.getElementById("a_and_c_week_alt");
     const banddtable = document.getElementById("b_and_d_week_alt");
 
-    if (aandcweek){
+    if (banddweek){
+        banddtable.style.display = "block";
+        aandctable.style.display = "none";
+    }else{
         aandctable.style.display = "block";
         banddtable.style.display = "none";
-    }else{
-        aandctable.style.display = "none";
-        banddtable.style.display = "block";
     }
 
 }
