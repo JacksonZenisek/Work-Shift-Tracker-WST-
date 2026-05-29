@@ -61,7 +61,7 @@ function weeklyscheduleswitch(){
     const aandctable = document.getElementById("a_and_c_week_alt");
     const banddtable = document.getElementById("b_and_d_week_alt");
 
-    if (banddweek){
+    if (aandcweek){
         banddtable.style.display = "table";
         aandctable.style.display = "none";
     }else{
