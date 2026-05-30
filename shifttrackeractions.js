@@ -10,30 +10,39 @@ function shiftswitch(){
     const currentday = now.getDay()
 
     let shiftdisplaymessage = "";
+    let upnextmessagepara = ""
 
     if((currentday === 0 || currentday === 1 || currentday === 2) && currenttime >=6 && currenttime < 18){
         shiftdisplaymessage = "Current shift is: A Shift"
         currentshiftbox.style.backgroundColor = "#ff6d6d"
+        upnextmessagepara = "Next shift: C Shift, starts at 6:00pm"
 
         
     }else if((currentday === 0 || currentday === 1 || currentday === 2) && (currenttime >=18 || currenttime < 6)){
         shiftdisplaymessage = "Current shift is: C Shift"
         currentshiftbox.style.backgroundColor = "#ffff82"
+        upnextmessagepara = "Next shift: A Shift, starts at 6:00am"
 
     }else if((currentday === 3 || currentday === 4 || currentday === 5 || currentday === 6) && currenttime >=6 && currenttime < 18){
         shiftdisplaymessage = "Current shift is: B Shift"
         currentshiftbox.style.backgroundColor = "#82ec82"
+        upnextmessagepara = "Next shift: D Shift, starts at 6:00pm"
 
     }else if((currentday === 3 || currentday === 4 || currentday === 5 || currentday === 6) && (currenttime >=18 || currenttime < 6)){
         shiftdisplaymessage = "Current shift is: D Shift"
         currentshiftbox.style.backgroundColor = "#70bfff"
+        upnextmessagepara = "Next shift: B Shift, starts at 6:00am"
+
+
     }else if(currentday === 0 && currenttime < 6){
         shiftdisplaymessage = "Current shift is: D Shift"
         currentshiftbox.style.backgroundColor = "#70bfff"
+        upnextmessagepara = "Next shift: A Shift, starts at 6:00am"
 
     }
 
     document.getElementById("shift_switch_para_alt").innerHTML = shiftdisplaymessage;
+    document.getElementById("upnext_para_alt").innerHTML = upnextmessagepara;
 }
 
 setInterval(timeclock,1000)
@@ -145,4 +154,3 @@ function dayhighlighter(){
 
 
 }
-
