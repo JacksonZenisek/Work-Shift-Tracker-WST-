@@ -168,6 +168,20 @@ p.footer_data{
     font-size:20px;
 }
 
+@media(max-width:1000px){
+    #upnext_container_alt{
+        width:750px;
+    }
+}
+
+@media(max-width:870px){
+    #upnext_container_alt{
+        width:750px;
+        margin-left:-80px;
+        margin-right:auto;
+        display:block;
+    }
+}
 
 @media (max-width:1060px){
     #main_content_container_alt{
