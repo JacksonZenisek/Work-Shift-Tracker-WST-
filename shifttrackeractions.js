@@ -58,7 +58,7 @@ setInterval(weeklyscheduleswitch,1000)
 function weeklyscheduleswitch(){
     const today = new Date();
 
-    const referencedate = new Date(2026, 5, 3)
+    const referencedate = new Date(2026, 4, 3)
 
     const millisecondsperweek = 1000 * 60 * 60 * 24 * 7;
 
